@@ -2,10 +2,94 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Adam Herrmann | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+     <!-- Font Awesome Kit -->
+     <script src="https://kit.fontawesome.com/fc0caa2480.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    Hello world!!
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">YourLogo</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <div class="hamburger"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="container">
+            <h1>Hi, I'm <span>Adam Herrmann</span></h1>
+            <p>I'm a Full-Time Student studying to be a UX/UI Front End Engineer.</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>[Write a brief introduction about yourself, your skills, experience, and what makes you unique.]</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2> My Projects</h2>
+            <div class="project-grid">
+                <!-- Project Item -->
+                <div class="project-item">
+                    <img src="images/project1.jpg" alt="Project 1">
+                    <div class="project-info">
+                        <i class="fa-solid fa-diagram-project"></i>
+                        <h3>Project Title</h3>
+                        <p>Short description of the project.</p>
+                    </div>
+                </div>
+                <!-- Repeat Project Items -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>I'm available for freelance work or full-time positions. Let's connect!</p>
+            <a href="mailto:your.email@example.com" class="btn">Get In Touch</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Adam Herrmann. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+    </script>
+
 </body>
 </html>
